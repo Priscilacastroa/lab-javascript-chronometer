@@ -1,6 +1,7 @@
 class Chronometer {
   constructor() {
-    // ... your code goes here
+    this.currentTime = 0
+    this.intervalId = null
   }
 
   start(callback) {
@@ -8,7 +9,7 @@ class Chronometer {
   }
 
   getMinutes() {
-    // ... your code goes here
+    return (Math.floor(this.currentTime/60))
   }
 
   getSeconds() {
